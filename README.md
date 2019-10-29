@@ -13,3 +13,12 @@
 
 # platraBackend
 Plane Tracking System - Node.js, Express, Socket API Project
+
+There is "test.js" inside the "routes" folder.
+  - It can respond to the "/test" GET requests
+  - It requests to opensky-network API periodically
+  - Every time it requests to the API, broadcasts that data to the clients via socket.io
+
+There is socketAPI.js
+  - It merges all socket.io staff in one file
+  - It makes socket.io reachable from everywhere
